@@ -12,8 +12,8 @@ function App() {
       <BrowserRouter>
         <Routes>
           <Route index element={<NewLogin />} />
-          <Route path="/new_login" element={<NewLogin />} />
-          <Route path="/new_lend" element={<NewLend />} />
+          <Route path="/newlogin" element={<NewLogin />} />
+          <Route path="/newlend" element={<NewLend />} />
           <Route path="*" element={<NoPage />} />
         </Routes>
       </BrowserRouter>

@@ -2,7 +2,7 @@ import Header from '../components/header.js'
 
 
 
-export default function NoPage(){
+function NoPage(){
     return(
         <>
         <Header />
@@ -10,3 +10,5 @@ export default function NoPage(){
         </>
     )
 }
+
+export default NoPage;

@@ -2,7 +2,7 @@ import Header from "../components/header.js"
 
 
 
-export default function new_lend(){
+function NewLend(){
     return(
         <>
         <Header />
@@ -10,3 +10,5 @@ export default function new_lend(){
         </>
     )
 }
+
+export default NewLend;
