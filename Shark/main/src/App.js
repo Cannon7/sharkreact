@@ -1,23 +1,22 @@
+import { BrowserRouter, Routes, Route } from "react-router-dom"
+import NewLogin from "./pages/new_login";
+import NewLend from "./pages/new_lend";
+import NoPage from "./pages/NoPage";
+
 import logo from './logo.svg';
 import './App.css';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <BrowserRouter>
+        <Routes>
+          <Route index element={<NewLogin />} />
+          <Route path="/new_login" element={<NewLogin />} />
+          <Route path="/new_lend" element={<NewLend />} />
+          <Route path="*" element={<NoPage />} />
+        </Routes>
+      </BrowserRouter>
     </div>
   );
 }
