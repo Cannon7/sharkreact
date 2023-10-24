@@ -1,5 +1,5 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom"
-import NewLogin from "./pages/new_login";
+import NewUser from "./pages/new_user";
 import NewLend from "./pages/new_lend";
 import NoPage from "./pages/NoPage";
 
@@ -11,8 +11,8 @@ function App() {
     <div>
       <BrowserRouter>
         <Routes>
-          <Route index element={<NewLogin />} />
-          <Route path="/newlogin" element={<NewLogin />} />
+          <Route index element={<NewUser />} />
+          <Route path="/newuser" element={<NewUser />} />
           <Route path="/newlend" element={<NewLend />} />
           <Route path="*" element={<NoPage />} />
         </Routes>
