@@ -1,14 +1,16 @@
 import React from 'react';
 
-function header(){
+function Header(){
 
     return(
         <>
-            <img src='https://placehold.co/60x40' ></img>
+            <img src='https://placehold.co/100x100' alt='shark logo'></img>
             <h1>Shark </h1>
-            <h3>Fun Shark Logo Here</h3>
+            <h3>Fun Shark stuff here</h3>
+            {/* placeholder line thing cuz i need it haha */}
+            <hr></hr>
         </>
     );
 }
 
-export default header;
+export default Header;
