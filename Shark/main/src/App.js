@@ -1,5 +1,6 @@
-import { BrowserRouter, Routes, Route } from "react-router-dom";
 import NewLogin from "./pages/new_login";
+import { BrowserRouter, Routes, Route } from "react-router-dom"
+import NewUser from "./pages/new_user";
 import NewLend from "./pages/new_lend";
 import NoPage from "./pages/NoPage";
 import MainPage from "./pages/home";
