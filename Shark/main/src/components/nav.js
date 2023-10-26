@@ -10,6 +10,8 @@ function Nav() {
                 <li><Link to="/about">About</Link></li>
                 <li><Link to="/contact">Contact</Link></li>
                 <li><Link to="/profile">Profile</Link></li>
+                <li><Link to="/mylends">My lends</Link></li>
+                <li><Link to="/myhistory">History</Link></li>
             </ul>
             {/* placeholder line thing cuz i need it haha */}
             <hr></hr>

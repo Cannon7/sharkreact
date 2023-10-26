@@ -5,6 +5,8 @@ import NewLend from "./pages/new_lend";
 import NoPage from "./pages/NoPage";
 import MainPage from "./pages/home";
 import UserProfile from "./pages/profile";
+import MyHistory from "./pages/myhistory";
+import MyLends from "./pages/mylends";
 
 import logo from './logo.svg';
 import './App.css';
@@ -20,6 +22,8 @@ function App() {
           <Route path="/newlend" element={<NewLend />} />
           <Route path="*" element={<NoPage />} />
           <Route path="/profile" element={<UserProfile/>}/>
+          <Route path="/mylends" element={<MyLends/>}/>
+          <Route path="/myhistory" element={<MyHistory/>}/>
         </Routes>
       </BrowserRouter>
     </div>
