@@ -1,5 +1,6 @@
 import Header from '../components/header.js'
 import Footer from '../components/footer.js'
+import Nav from '../components/nav.js';
 
 
 
@@ -7,19 +8,37 @@ function NewUser(){
     return(
         <>
         <Header />
+        <Nav/>
         <h1>New user</h1>
 
-        <h3>Name</h3>
-        <p>Entry box</p>
+        <form>
+            <label>Name:</label>
+            <input type = "text" required/>
+        </form>
 
-        <h3>Username</h3>
-        <p>Entry box</p>
+        <form>
+            <label>Username:</label>
+            <input type = "text" required/>
+        </form>
 
-        <h3>Password</h3>
-        <p>Entry box maybe with conditions?</p>
+        <form>
+            <label>Password:</label>
+            <input type = "text" required/>
+        </form>
 
-        <h3>Contact info</h3>
-        <p>Drop down box w mode of contact w entry box</p>
+        <form>
+            <label>Contact type:</label>
+            <select>
+                <option value="email">Email</option>
+                <option value="text">Text</option>
+                <option value="carrierpigeon">Our Carrier Pigeon Miguel</option>
+            </select>
+        </form>
+        <form>
+            <label>Contact Info:</label>
+            <input type = "text" required/>
+        </form>
+        
         <Footer/>
         </>
     )
