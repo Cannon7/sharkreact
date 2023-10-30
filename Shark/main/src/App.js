@@ -7,6 +7,7 @@ import MainPage from "./pages/home";
 import UserProfile from "./pages/profile";
 import MyHistory from "./pages/myhistory";
 import MyLends from "./pages/mylends";
+import Login from "./pages/login";
 
 import logo from './logo.svg';
 import './App.css';
@@ -21,9 +22,10 @@ function App() {
           <Route path="/newuser" element={<NewUser />} />
           <Route path="/newlend" element={<NewLend />} />
           <Route path="*" element={<NoPage />} />
-          <Route path="/profile" element={<UserProfile/>}/>
-          <Route path="/mylends" element={<MyLends/>}/>
-          <Route path="/myhistory" element={<MyHistory/>}/>
+          <Route path="/profile" element={<UserProfile/>} />
+          <Route path="/mylends" element={<MyLends/>} />
+          <Route path="/myhistory" element={<MyHistory/>} />
+          <Route Path= "/login" element={<Login />} />
         </Routes>
       </BrowserRouter>
     </div>
