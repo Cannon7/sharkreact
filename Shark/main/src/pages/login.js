@@ -1,5 +1,6 @@
-import Header from "../components/header.js"
-import Footer from "../components/footer.js"
+import Header from "../components/header.js";
+import Footer from "../components/footer.js";
+import React, { useState } from "react";
 
 function Login () {
     const [username, setName] = useState("");
@@ -9,9 +10,9 @@ function Login () {
             <Header />
             <h2>Login</h2>
             <form>
-                <label htmlfor="username-field">Username:</label>
+                <label for="username-field">Username:</label>
                 <input id="username-field" type="text" value={username} onChange={(e) => setName(e.target.value)} />
-                <label htmlfor="password-field">Password:</label>
+                <label for="password-field">Password:</label>
                 <input id="password-field" type="text" value={password} onChange={(e) => setPassword(e.target.value)} />
                 <button>Login</button>
             </form>    
