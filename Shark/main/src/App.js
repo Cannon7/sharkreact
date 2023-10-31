@@ -8,8 +8,6 @@ import UserProfile from "./pages/profile";
 import MyHistory from "./pages/myhistory";
 import MyLends from "./pages/mylends";
 import Login from "./pages/login";
-
-import logo from './logo.svg';
 import './App.css';
 
 function App() {
