@@ -1,4 +1,4 @@
-import NewLogin from "./pages/new_login";
+
 import { BrowserRouter, Routes, Route } from "react-router-dom"
 import NewUser from "./pages/new_user";
 import NewLend from "./pages/new_lend";
@@ -7,6 +7,7 @@ import MainPage from "./pages/home";
 import UserProfile from "./pages/profile";
 import MyHistory from "./pages/myhistory";
 import MyLends from "./pages/mylends";
+import Login from "./pages/login";
 
 import logo from './logo.svg';
 import './App.css';
@@ -17,13 +18,14 @@ function App() {
       <BrowserRouter>
         <Routes>
           <Route path="/home" element={<MainPage/>} />
-          <Route index element={<NewLogin />} />
-          <Route path="/newlogin" element={<NewLogin />} />
+          <Route index element={<MainPage />} />
+          <Route path="/newuser" element={<NewUser />} />
           <Route path="/newlend" element={<NewLend />} />
           <Route path="*" element={<NoPage />} />
-          <Route path="/profile" element={<UserProfile/>}/>
-          <Route path="/mylends" element={<MyLends/>}/>
-          <Route path="/myhistory" element={<MyHistory/>}/>
+          <Route path="/profile" element={<UserProfile/>} />
+          <Route path="/mylends" element={<MyLends/>} />
+          <Route path="/myhistory" element={<MyHistory/>} />
+          <Route Path= "/login" element={<Login />} />
         </Routes>
       </BrowserRouter>
     </div>
