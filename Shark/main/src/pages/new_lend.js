@@ -9,17 +9,38 @@ function NewLend(){
         <Header />
         <h1>New Lend Creation</h1>
 
-        <h3>Name of Lendee</h3>
-        <p>Entry box</p>
+        <form>
+            <label>Name of Lendee:</label>
+            <input type = "text" required/>
+        </form>
 
-        <h3>Object Being Lent</h3>
-        <p>Entry box</p>
+        <form>
+            <label>Object being Lent:</label>
+            <input type = "text" required/>
+        </form>
 
-        <h3>Length of Loan</h3>
-        <p>Drop down box w time lengths w custom option</p>
+        <form>
+            <label>Duration of Lend:</label>
+            <input type = "text" required/>
+            <select>
+                <option value="day">Days</option>
+                <option value="week">Weeks</option>
+                <option value="month">Months</option>
+                <option value="custom">Custom</option>
+            </select>
+        </form>
 
-        <h3>Lendee Contact Prefrence</h3>
-        <p>Drop down list w contact options w entry box</p>
+        <form>
+            <label>Lendee Contact:</label>
+            
+            <select>
+                <option value="call">Call</option>
+                <option value="text">Text</option>
+                <option value="email">Email</option>
+                <option value="Miguel">Miguel</option>
+            </select>
+            <input type = "text" required/>
+        </form>
         <Footer />
         </>
     )
