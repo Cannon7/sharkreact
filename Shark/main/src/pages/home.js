@@ -4,7 +4,7 @@ import Footer from '../components/footer';
 import Nav from '../components/nav';
 import '../ella.css';
 
-function HomePage() {
+function MainPage() {
   return (
     <div>
         <Header></Header>
@@ -47,4 +47,4 @@ function HomePage() {
   )
 };
 
-export default HomePage;
+export default MainPage;

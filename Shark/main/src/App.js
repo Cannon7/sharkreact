@@ -3,7 +3,7 @@ import { BrowserRouter, Routes, Route } from "react-router-dom"
 import NewUser from "./pages/new_user";
 import NewLend from "./pages/new_lend";
 import NoPage from "./pages/NoPage";
-import HomePage from "./pages/home";
+import MainPage from "./pages/home";
 import UserProfile from "./pages/profile";
 import MyHistory from "./pages/myhistory";
 import MyLends from "./pages/mylends";
