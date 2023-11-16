@@ -9,37 +9,20 @@ function MainPage() {
     <div>
         <Header></Header>
         <Nav />
+        {/* The body class should be applied to all mains, will center text */}
         <main className='body profileHome'>
-          <div id='bodyCard'>
-            <section id='topSectionHome'>
-              <section id='leftTopHome'>
-                <h2 className='infoBox'>Name </h2>
-                <h2 className='infoBox'>Username</h2>
-                <div id='contactBox' className='infoBox'>
-                  <h3>Contact:</h3>
-                  <p>111 111-1111</p>
-                  <p>exampleEmail@gmail.com</p>
-                </div>
-              </section>
-              <section id='rightTopHome'>
-                <img src='https://placehold.co/200x200' alt='profilePicture'></img>
-              <p>★★★★☆</p>
-              </section>
+          {/* Ella G. */}
+          {/* The div's id is so we can make a custom grid for this specific page */}
+          {/* The class is to make the body card-like, it should be applied on every page */}
+          <div id='homePageGrid' className='bodyCard'>
+            <h1>Welcome Back User!</h1>
+            {/* infoBox basically puts a border around whatever the class is defined on*/}
+            <section className='infoBox'>
+              <h2 >Alerts</h2>
+              <p>Ben's loan is due in 3 days</p>
             </section>
-            <section id='bottomSectionHome'>
-              <h1>Lendee Ratings & Reviews</h1>
-              <section id='lendeeRatings'>
-                <section id='exampleLendeeGrid'>
-                  <div id='exampleLendeeReviewCard'>
-                    <h3 className='underLined'>Lendee name:</h3>
-                    <p>Spilled water on my book :(</p>
-                  </div>
-                  <div >
-                    <p>★★☆☆☆</p>
-                  </div>
-                </section>
-              </section>
-            </section>
+            <img src='https://placehold.co/200x200' alt='profilePicture'></img>
+            <h2 className='infoBox'><a href=''>View Current Loans</a></h2>
           </div>
         </main>
         <Footer></Footer>
