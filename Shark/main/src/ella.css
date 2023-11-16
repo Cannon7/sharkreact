@@ -1,0 +1,43 @@
+
+#topSectionHome{
+    display: grid;
+    grid-template-columns: 1fr .5fr;
+    text-align: center;
+}
+
+#bodyCard{
+    border: 5px solid black;
+    padding: 1em;
+    margin: 0 auto;
+}
+
+.infoBox{
+    border: 5px black solid;
+}
+
+#bottomSectionHome{
+    text-align: center;
+}
+
+#lendeeRatings{
+    display: grid;
+    grid-template-columns: 1fr;
+    text-align: center;
+}
+
+#exampleLendeeGrid{
+    display: flex;
+    padding: 1em;
+}
+
+#exampleLendeeReviewCard{
+    border: 5px black solid;
+    margin: 0 1em;
+    text-align: center;
+    padding: 1em;
+}
+
+.underLined{
+    border-bottom: 5px solid black;
+    padding: .25em;
+}

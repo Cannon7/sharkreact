@@ -3,7 +3,7 @@ import { BrowserRouter, Routes, Route } from "react-router-dom"
 import NewUser from "./pages/new_user";
 import NewLend from "./pages/new_lend";
 import NoPage from "./pages/NoPage";
-import MainPage from "./pages/home";
+import HomePage from "./pages/home";
 import UserProfile from "./pages/profile";
 import MyHistory from "./pages/myhistory";
 import MyLends from "./pages/mylends";
@@ -16,7 +16,7 @@ function App() {
     <div>
       <BrowserRouter>
         <Routes>
-          <Route path="/home" element={<MainPage/>} />
+          <Route path="/home" element={<HomePage/>} />
           <Route index element={<NewLogin />} />
           <Route path="/newlogin" element={<NewLogin />} />
           <Route path="/newlend" element={<NewLend />} />
