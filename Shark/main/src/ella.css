@@ -1,33 +1,43 @@
 
-/* centers all main */
-.body{
+#topSectionHome{
+    display: grid;
+    grid-template-columns: 1fr .5fr;
     text-align: center;
 }
 
-/* div directly under main for a card-like view */
-/* apply to all pages with card look on wireframe */
-.bodyCard{
+#bodyCard{
     border: 5px solid black;
     padding: 1em;
-    margin: 1em 1em;
+    margin: 0 auto;
 }
 
-/* adds a border and a little padding to any html tag*/
 .infoBox{
     border: 5px black solid;
-    padding: .25em;
+}
+
+#bottomSectionHome{
+    text-align: center;
+}
+
+#lendeeRatings{
+    display: grid;
+    grid-template-columns: 1fr;
+    text-align: center;
+}
+
+#exampleLendeeGrid{
+    display: flex;
+    padding: 1em;
+}
+
+#exampleLendeeReviewCard{
+    border: 5px black solid;
+    margin: 0 1em;
+    text-align: center;
+    padding: 1em;
 }
 
 .underLined{
     border-bottom: 5px solid black;
     padding: .25em;
-}
-
-/* PROFILE SPECIFIC */
-
-/* creates grid for profile */
-#sectionProfile{
-    display: grid;
-    grid-template-columns: 1fr .5fr;
-    text-align: center;
 }
