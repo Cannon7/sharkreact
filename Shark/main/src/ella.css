@@ -1,53 +1,3 @@
-header {
-    background-color: #720e07;
-    color: white;
-    display: grid;
-    width: 100%; 
-    grid-template-columns: 33% 33% 33% ;
-    justify-items: center;
-
-}
-
-.title-box h3 {
-    font-family: 'Raleway';
-}
-
-.logo-box {
-    margin: 20px;
-    z-index: +1;
-    align-content: center;
-}
-
-nav {
-    justify-items: end;
-}
-
-nav a {
-    font-family: 'Raleway'; 
-    color: #8ccfc0;
-    text-align: center;
-    text-decoration: none;
-    padding: 30px;
-    font-size: 20px;
-    display: none;
-}
-
-.responsive a{
-    display: block;
-}
-
-nav a:hover {
-    background-color: #B0B4BF;
-    color: #720e07;
-}
-
-.ham {
-    display: grid;
-    text-decoration: none;
-    font-size: 2.5em;
-    justify-self: end;
-    margin: 15px;
-}
 
 #topSectionHome{
     display: grid;
@@ -57,21 +7,12 @@ nav a:hover {
 
 #bodyCard{
     border: 5px solid black;
-    border-radius: 25px;
-    background-color: #B0B4BF;
     padding: 1em;
     margin: 0 auto;
 }
 
 .infoBox{
     border: 5px black solid;
-    border-radius: 25px;
-    background-color: #8ccfc0;
-}
-
-img{
-    border: 1px black solid;
-    border-radius: 25px;
 }
 
 #bottomSectionHome{
@@ -91,19 +32,12 @@ img{
 
 #exampleLendeeReviewCard{
     border: 5px black solid;
-    border-radius: 25px;
     margin: 0 1em;
     text-align: center;
-    padding: .25em;
-    background-color: #8ccfc0;
+    padding: 1em;
 }
 
 .underLined{
     border-bottom: 5px solid black;
     padding: .25em;
-}
-
-.footer {
-    background-color: #f4d06f;
-    text-align:center;
 }
