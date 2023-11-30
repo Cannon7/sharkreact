@@ -3,33 +3,20 @@ import { Link } from 'react-router-dom';
 
 function Nav() {
     return(
-        <nav class="navigation" >
-{/*Added Hamburger Menu functionality, 
-changed the list to a collection of nav 
-elements to remove the bullet points- 
-there may have been a better way to do 
-that, but I don't know it*/}
-            <a class="ham" href="#">&#9776;</a>
-            <a href="./home">Home</a>
-            <a href="./about">About</a>
-            <a href="./contact">Contact</a>
-            <a href="./profile">Profile</a>
-            <a href="./mylends">My Lends</a>
-            <a href="./myhistory">History</a>
+        <nav>
+            <ul>
+                {/* placeholder nav  links i think. home and profile should work */}
+                <li><Link to="/home">Home</Link></li>
+                <li><Link to="/about">About</Link></li>
+                <li><Link to="/contact">Contact</Link></li>
+                <li><Link to="/profile">Profile</Link></li>
+                <li><Link to="/mylends">My lends</Link></li>
+                <li><Link to="/myhistory">History</Link></li>
+            </ul>
+            {/* placeholder line thing cuz i need it haha */}
+            <hr></hr>
         </nav>
     );
 };
-
-/*--Hamburger menu--*/
-const nav1 = document.querySelector('.navigation');
-nav1.addEventListener('click', ()=>
-{nav1.classList.toggle('shown')});
-
-const mainnav = document.querySelector('.navigation');
-const hambutton = document.querySelector('.ham');
-
-hambutton.addEventListener('click', () => {
-    mainnav.classList.toggle('responsive');})
-
 
 export default Nav;
