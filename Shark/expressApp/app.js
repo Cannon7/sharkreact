@@ -27,19 +27,19 @@ app.get('/api/data', (req, res) => {
   });
 });
 
-app.post('/api/data', (req, res) => {
-  const { name, email, password } = req.body;
-  db.query('INSERT INTO user SET ?', {
-    username: name, 
-    email: email,
-    password: password  
-  }, (error, results) => {
-    if (error) {
-      return res.status(500).json({error});
-    } 
-    res.json({message: 'Data inserted'})
-  });
-});
+// app.post('/api/data', (req, res) => {
+//   const { name, email, password } = req.body;
+//   db.query('INSERT INTO user SET ?', {
+//     username: name, 
+//     email: email,
+//     password: password  
+//   }, (error, results) => {
+//     if (error) {
+//       return res.status(500).json({error});
+//     } 
+//     res.json({message: 'Data inserted'})
+//   });
+// });
 
 // Listen
 const port = 8080;
