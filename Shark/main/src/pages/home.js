@@ -1,19 +1,14 @@
 import React from 'react';
 import Header from '../components/header';
 import Footer from '../components/footer';
-import '../ella.css';
+import Nav from '../components/nav';
+import '../styles/ella.css';
 
 function MainPage() {
   return (
     <div>
         <Header></Header>
-{/*Removed Nav to add it to the header- 
-also added extra div elements to wrap 
-certain objects for easier formatting 
-(I think. I might have only done that 
-on Header- it all blurs together lol), 
-and moved the stars into the rating box 
-proper*/}
+        <Nav />
         <main className='body profileHome'>
           <div id='bodyCard'>
             <section id='topSectionHome'>
@@ -27,7 +22,7 @@ proper*/}
                 </div>
               </section>
               <section id='rightTopHome'>
-              <img src='https://placehold.co/200x200' alt='profilePicture'></img>
+                <img src='https://placehold.co/200x200' alt='profilePicture'></img>
               <p>★★★★☆</p>
               </section>
             </section>
@@ -38,6 +33,8 @@ proper*/}
                   <div id='exampleLendeeReviewCard'>
                     <h3 className='underLined'>Lendee name:</h3>
                     <p>Spilled water on my book :(</p>
+                  </div>
+                  <div >
                     <p>★★☆☆☆</p>
                   </div>
                 </section>
