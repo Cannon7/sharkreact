@@ -8,7 +8,7 @@ import UserProfile from "./pages/profile";
 import MyHistory from "./pages/myhistory";
 import MyLends from "./pages/mylends";
 import Login from "./pages/login";
-import './App.css';
+import './styles/App.css';
 
 function App() {
   return (
