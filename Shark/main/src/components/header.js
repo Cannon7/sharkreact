@@ -1,9 +1,9 @@
 import React from 'react';
 import Nav from './nav.js';
 function Header(){
-{/*Re-added Nav to header, also added extra 
-div elements to wrap certain objects for 
-easier formatting*/}
+    /*Re-added Nav to header, also added extra 
+    div elements to wrap certain objects for 
+    easier formatting*/
     return(
         <>
         <header>
@@ -12,7 +12,7 @@ easier formatting*/}
                 <h3>Fun Shark stuff here</h3>
             </div>
             <div className='logo-box'>
-            <img src='./components/sharklogo.jpg' alt='shark logo' />
+            <img src='sharklogo.jpg' alt='shark logo' />
             </div>
             <Nav />
         </header>
