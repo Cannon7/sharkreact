@@ -1,0 +1,32 @@
+.top {
+    background-color: #720e07;
+    color: white;
+    display: grid;
+    width: 100%; 
+    grid-template-columns: 33% 33% 33% ;
+    justify-items: center;
+}
+.box {
+    border: 5px black solid;
+    border-radius: 25px;
+    background-color: #8ccfc0;
+}
+.mainbody {
+    border: 5px solid black;
+    border-radius: 25px;
+    background-color: #B0B4BF;
+    padding: 1em;
+    margin: 0 auto;
+    text-align: center;
+}
+.navbar {
+    border: 5px solid black;
+    background-color: #B0B4BF;
+    text-decoration: none;
+    padding: 30px;
+    font-size: 20px;
+}
+.bottom {
+    background-color: #f4d06f;
+    text-align:center;
+}

@@ -3,7 +3,7 @@ import React from 'react';
 function Footer(){
 
     return(
-        <div>
+        <div class='bottom'>
             {/* placeholder line thing cuz i need it haha */}
             <hr></hr>
             <p id="currentYear"></p>
