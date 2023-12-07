@@ -1,9 +1,11 @@
 import React from "react";
-
+import Header from "../components/header.js";
+import Footer from "../components/footer.js";
 function MyHistory() {
     var lendlist = LendNode();
     return(
         <div>
+            <Header />
             <p>lends will go here :O</p>
             <p id ="lendbox">
                 {lendlist.map((lend) => (
@@ -15,6 +17,7 @@ function MyHistory() {
                     </div>
                 ))}
             </p>
+            <Footer />
         </div>
     );
 };

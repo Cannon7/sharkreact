@@ -7,7 +7,7 @@ import '../styles/home.css';
 function MainPage() {
   return (
     <div>
-        <Header></Header>
+        <Header />
         <Nav />
         <main className='body profileHome'>
           <div id='bodyCard'>
@@ -42,7 +42,7 @@ function MainPage() {
             </section>
           </div>
         </main>
-        <Footer></Footer>
+        <Footer />
     </div>
   )
 };
