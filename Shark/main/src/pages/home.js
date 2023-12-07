@@ -1,12 +1,14 @@
 import React from 'react';
 import Header from '../components/header';
 import Footer from '../components/footer';
+import Nav from '../components/nav';
 import '../styles/home.css';
 
 function MainPage() {
   return (
     <div>
         <Header></Header>
+
         <main className='body profileHome'>
           <div id='bodyCard'>
             <section id='topSectionHome'>
@@ -38,7 +40,7 @@ function MainPage() {
             </section>
           </div>
         </main>
-        <Footer></Footer>
+        <Footer />
     </div>
   )
 };

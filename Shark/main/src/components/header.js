@@ -18,6 +18,7 @@ function Header(){
         </header>
             {/* placeholder line thing cuz i need it haha */}
             <hr></hr>
+        </div>
         </>
     );
 }

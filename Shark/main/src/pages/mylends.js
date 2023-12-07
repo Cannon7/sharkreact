@@ -1,29 +1,39 @@
 import React from "react";
-
-function MyLends() {
+import Header from "../components/header.js";
+import Footer from "../components/footer.js";
+import Nav from '../components/nav';
+import "../styles/mylends.css";
+function MyLend() {
     var lendlist = LendNode();
     return(
         <div>
-            <p>lends will go here :O</p>
-            <p id ="lendbox">
-                {lendlist.map((lend) => (
-                    <div key={lend.keyid}>
-                        <p>Lendee: {lend.person}</p>
-                        <p>Item: {lend.item}</p>
-                        <p>Start Date: {lend.start}</p>
-                        <p>Due Date: {lend.due}</p>
-                    </div>
-                ))}
-            </p>
+            <Header className='top'/>
+            <Nav />
+            <div class='mainbody'>
+            <h2 class="box">My Lends</h2>
+                <p class="box">
+                    {lendlist.map((lend) => (
+                        <div key={lend.keyid}>
+                            <p>Lendee: {lend.person}</p>
+                            <p>Item: {lend.item}</p>
+                            <p>Start Date: {lend.start}</p>
+                            <p>Return by Date: {lend.receive}</p>
+                        </div>
+                    ))}
+                </p>
+            </div>
+            <Footer />
         </div>
     );
 };
 function LendNode() {
-    var lendee = "Cannon";
-    var itemlend = "book1";
-    var startdate = "10/17/2023";
-    var duedate = "10/32/2023";
+    var lendee = "Cabnon";
+    var itemlend = "book35";
+    var startdate = "12/9/2023";
+    var receivedate = "12/22/2023";
     var id = 1;
-    return [{person: lendee, item: itemlend, start: startdate, due: duedate, keyid: id}]
+    return [{person: lendee, item: itemlend, start: startdate, receive: receivedate, keyid: id}]
 }
-export default MyLends;
+
+
+export default MyLend;

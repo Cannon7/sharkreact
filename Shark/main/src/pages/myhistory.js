@@ -1,20 +1,28 @@
 import React from "react";
-
+import Header from "../components/header.js";
+import Footer from "../components/footer.js";
+import Nav from '../components/nav';
+import "../styles/myhistory.css";
 function MyHistory() {
     var lendlist = LendNode();
     return(
         <div>
-            <p>lends will go here :O</p>
-            <p id ="lendbox">
-                {lendlist.map((lend) => (
-                    <div key={lend.keyid}>
-                        <p>Lendee: {lend.person}</p>
-                        <p>Item: {lend.item}</p>
-                        <p>Start Date: {lend.start}</p>
-                        <p>Date Returned: {lend.receive}</p>
-                    </div>
-                ))}
-            </p>
+            <Header className='top'/>
+            <Nav />
+            <div class='mainbody'>
+            <h2 class="box">Lend History</h2>
+                <p class="box">
+                    {lendlist.map((lend) => (
+                        <div key={lend.keyid}>
+                            <p>Lendee: {lend.person}</p>
+                            <p>Item: {lend.item}</p>
+                            <p>Start Date: {lend.start}</p>
+                            <p>Date Returned: {lend.receive}</p>
+                        </div>
+                    ))}
+                </p>
+            </div>
+            <Footer />
         </div>
     );
 };
