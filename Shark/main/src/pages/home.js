@@ -7,8 +7,8 @@ import '../styles/home.css';
 function MainPage() {
   return (
     <div>
-        <Header />
-        <Nav />
+        <Header></Header>
+
         <main className='body profileHome'>
           <div id='bodyCard'>
             <section id='topSectionHome'>
@@ -33,8 +33,6 @@ function MainPage() {
                   <div id='exampleLendeeReviewCard'>
                     <h3 className='underLined'>Lendee name:</h3>
                     <p>Spilled water on my book :(</p>
-                  </div>
-                  <div >
                     <p>★★☆☆☆</p>
                   </div>
                 </section>
