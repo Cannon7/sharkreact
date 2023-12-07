@@ -6,6 +6,7 @@ function Header(){
     easier formatting*/
     return(
         <>
+        <div>
         <header>
             <div className= 'title-box'>
                 <h1>Shark</h1>

@@ -2,7 +2,6 @@ import React from 'react';
 
 function Nav() {
     return(
-
         <nav class="navigation" >
         {/*Added Hamburger Menu functionality, 
         changed the list to a collection of nav 
@@ -15,7 +14,6 @@ function Nav() {
             <a href="./mylends">My Lends</a>
             <a href="./myhistory">History</a>
         </nav>
-
     );
 };
 
