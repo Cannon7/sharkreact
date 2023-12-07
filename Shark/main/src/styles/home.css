@@ -3,9 +3,13 @@ header {
     color: white;
     display: grid;
     width: 100%; 
-    grid-template-columns: 33% 33% 33% ;
+    grid-template-columns: 33% 33% 33%;
     justify-items: center;
+    font-family: 'Raleway';
+}
 
+.title-box h1{
+    font-family:'Gloock';
 }
 
 .title-box h3 {
