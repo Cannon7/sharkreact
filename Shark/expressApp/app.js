@@ -70,7 +70,7 @@ app.post('/api/deleteuser', (req, res) => {
 });
 //Get Lendees
 app.get('/api/lendee', (req, res) => {
-  db.query('SELECT * FROM lendee_table', (error, results) => {
+  db.query('SELECT * FROM lendee_table WHERE Lender = *', (error, results) => {
     if (error) {
       return res.status(500).json({error});
     }

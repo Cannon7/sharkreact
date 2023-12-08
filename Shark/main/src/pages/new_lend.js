@@ -4,6 +4,35 @@ import axios from 'axios';
 
 
 function NewLend(){
+    const lendeeInsert = async (a) => {
+        a.preventDefault();
+        try {
+          await axios.post('http://localhost:8080/api/lendee', {
+            lend_name, 
+            amount,
+            due,
+            given,
+            phone,
+            rating,
+            lender
+          });
+          alert('Data inserted!');
+        } catch (err) {
+          console.log(err);
+        }
+      }
+    /*
+    <form onSubmit={lendeeInsert}>
+        <input type="text" name="name" placeholder="Lendee Name" onChange={(a) => setLendee(a.target.value)}/>
+        <input type="number" name="amount" placeholder="Amount Lent" onChange={(a) => setAmount(a.target.value)}/>
+        <input type="date" name="due" placeholder="Date Lent" onChange={(a) => setGiven(a.target.value)}/>
+        <input type="date" name="given" placeholder="Date Due" onChange={(a) => setDue(a.target.value)}/>
+        <input type="number" name="phone" placeholder="Lendee Phone" onChange={(a) => setPhone(a.target.value)}/>
+        <input type="number" name="rating" placeholder="Lendee Rating" onChange={(a) => setRating(a.target.value)}/>
+        <input type="number" name="lender" placeholder="Lender" onChange={(a) => setLender(a.target.value)}/>
+        <button type="submit">New Lend</button>
+    </form>
+    */
     return(
         <>
         <Header />
