@@ -1,6 +1,6 @@
 import Header from "../components/header.js"
 import Footer from "../components/footer.js"
-
+import axios from 'axios';
 
 
 function NewLend(){

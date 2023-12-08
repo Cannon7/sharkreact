@@ -1,10 +1,32 @@
 import Header from '../components/header.js'
 import Footer from '../components/footer.js'
 import Nav from '../components/nav.js';
-
+import axios from 'axios';
 
 
 function NewUser(){
+    const handleInsert = async (e) => {
+        e.preventDefault();
+        try {
+          await axios.post('http://localhost:8080/api/data', {
+            name,
+            email,
+            password
+          });
+          
+          alert('Data inserted!'); 
+        } catch (err) {
+          console.log(err);
+        }
+      }
+/*
+    <form onSubmit={handleInsert}>
+        <input type="text" placeholder="Name" value={name} onChange={(e) => setName(e.target.value)} />
+        <input type="email" placeholder="Email" value={email} onChange={(e) => setEmail(e.target.value)}  />
+        <input type="text" placeholder="Password" value={password} onChange={(e) => setPassword(e.target.value)}/>
+        <button type="submit">Insert Data</button>
+      </form>
+*/
     return(
         <>
         <Header />
