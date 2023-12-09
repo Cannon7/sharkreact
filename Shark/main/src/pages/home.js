@@ -2,7 +2,7 @@ import React from 'react';
 import Header from '../components/header';
 import Footer from '../components/footer';
 import '../styles/home.css';
-
+// ella 
 function MainPage() {
   return (
     <div>
@@ -20,6 +20,7 @@ function MainPage() {
               <p>Ben's loan is due in 3 days</p>
             </section>
             <img src='https://placehold.co/200x200' alt='profilePicture'></img>
+            {/* link to users current lend page. */}
             <h2 className='infoBox'><a href='mylends'>View Current Loans</a></h2>
           </div>
         </main>

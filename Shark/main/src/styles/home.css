@@ -52,7 +52,7 @@ nav a:hover {
     justify-self: end;
     margin: 15px;
 }
-/* Home Grid n stuff */
+/* Home Grid n stuff ella*/
 #homePageGrid{
     display: grid;
     grid-template-columns: 1fr .5fr;
@@ -86,7 +86,7 @@ nav a:hover {
     padding: 1rem;
 }
 
-/* profile grid n stuff */
+/* profile grid n stuff ella */
 #sectionProfile{
     display: grid;
     grid-template-columns: 1fr 1fr;
