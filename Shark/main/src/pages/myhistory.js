@@ -5,6 +5,7 @@ import Nav from '../components/nav';
 import "../styles/myhistory.css";
 function MyHistory() {
     var lendlist = LendNode();
+    /*Lend node is an instance of a lend that has information of the lend*/
     return(
         <div>
             <Header className='top'/>
@@ -12,6 +13,7 @@ function MyHistory() {
             <div class='mainbody'>
             <h2 class="box">Lend History</h2>
                 <p class="box">
+                    {/*This map takes all of the dictionary keys and presents the information */}
                     {lendlist.map((lend) => (
                         <div key={lend.keyid}>
                             <p>Lendee: {lend.person}</p>
@@ -26,6 +28,8 @@ function MyHistory() {
         </div>
     );
 };
+
+{/*This is a placeholder lend thhat can be filled from a database */}
 function LendNode() {
     var lendee = "Cannon";
     var itemlend = "book1";

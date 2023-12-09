@@ -5,6 +5,7 @@ import Nav from '../components/nav';
 import "../styles/mylends.css";
 function MyLend() {
     var lendlist = LendNode();
+    /*Lend node is an instance of a lend that has information of the lend*/
     return(
         <div>
             <Header className='top'/>
@@ -12,6 +13,7 @@ function MyLend() {
             <div class='mainbody'>
             <h2 class="box">My Lends</h2>
                 <p class="box">
+                    {/*This map takes all of the dictionary keys and presents the information */}
                     {lendlist.map((lend) => (
                         <div key={lend.keyid}>
                             <p>Lendee: {lend.person}</p>
@@ -26,6 +28,7 @@ function MyLend() {
         </div>
     );
 };
+{/*This is a placeholder lend thhat can be filled from a database */}
 function LendNode() {
     var lendee = "Cabnon";
     var itemlend = "book35";

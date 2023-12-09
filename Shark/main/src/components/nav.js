@@ -6,7 +6,7 @@ function Nav() {
   const toggleMenu = () => {
     setIsResponsive(!isResponsive);
   };
-
+{/* This nav is a hambburger menu that leads links to file directories */}
   return (
     <nav className={`navigation ${isResponsive ? 'responsive' : ''}`}>
       <a className="ham" href="#" onClick={toggleMenu}>
