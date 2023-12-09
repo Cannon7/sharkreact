@@ -1,34 +1,28 @@
-# sharkreact# Overview
+# sharkreact
 
-{Important! Do not say in this section that this is college assignment.}
+# Overview
+This is a website designed for people who are constantly loaning things out and never getting them back. This website is ment to keep track of those items, who you loaned them out to, and for how long. You will never lose track of your items again or when someone claims that they "lost it", you know who to contact.
 
-{Provide a description of your team project. Describe how to use the software.}
-
-{If this is an online class, then provide a link to your YouTube demonstration. It should be a 4-5 minute demo of the software running and a walkthrough of the code.}
-
-[Software Demo Video](http://youtube.link.goes.here)
 
 # Development Environment
 
-{Describe the tools that you used to develop the software}
-
-{Describe the programming language that you used and any libraries.}
+We used REACT with some CSS to bring this project to life.
 
 # Collaborators
 
-{Provide a list of everyone on your team}
+Cannon Roach
+Ella Galbraith
+Kalina Warner
+Cole Williams
+Emma Johnson
 
 # Useful Websites
 
-{Make a list of websites that you found helpful in this project}
-
-- [Web Site Name](http://url.link.goes.here)
-- [Web Site Name](http://url.link.goes.here)
+- [REACT Tutorials](https://react.dev/learn)
+- [W3 Schools Tutorials](https://www.w3schools.com/REACT/DEFAULT.ASP)
 
 # Future Work
 
-{Make a list of things that you need to fix, improve, and add in the future.}
-
-- Item 1
-- Item 2
-- Item 3
+- Adding more pages to the site, like an About and a Contact page!
+- Try different types of databases to see what works best with the REACT app.
+- Add more css features such as scrolling backgrounds.
