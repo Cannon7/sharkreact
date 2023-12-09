@@ -8,13 +8,23 @@ function MainPage() {
   return (
     <div>
         <Header></Header>
-        <main>
-            <Nav />
-            <h2>Welcome back user! </h2>
-            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Magnam unde nemo nam iusto soluta quo molestiae fugit reiciendis quaerat voluptatem, maxime possimus corporis delectus aperiam vel quibusdam, est, consectetur voluptatibus doloribus minima esse. Animi quis consequuntur maxime similique voluptatibus recusandae!</p>
-
+        {/* The body class should be applied to all mains, will center text */}
+        <main className='body profileHome'>
+          {/* Ella G. */}
+          {/* The div's id is so we can make a custom grid for this specific page */}
+          {/* The class is to make the body card-like, it should be applied on every page */}
+          <div id='homePageGrid' className='bodyCard'>
+            <h1>Welcome Back User!</h1>
+            {/* infoBox basically puts a border around whatever the class is defined on*/}
+            <section id='alertSection' className='infoBox'>
+              <h2 >Alerts</h2>
+              <p>Ben's loan is due in 3 days</p>
+            </section>
+            <img src='https://placehold.co/200x200' alt='profilePicture'></img>
+            <h2 className='infoBox'><a href='mylends'>View Current Loans</a></h2>
+          </div>
         </main>
-        <Footer></Footer>
+        <Footer />
     </div>
   )
 };

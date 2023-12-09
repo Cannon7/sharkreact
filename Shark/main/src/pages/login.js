@@ -5,20 +5,30 @@ import axios from 'axios';
 
 function Login() {
 
-  const [users, setUsers] = useState([]);
-
   useEffect(() => {
     fetch('/api/users')
       .then(res => res.json())
       .then(users => setUsers(users)); 
   }, []);
 
-  return (
-    <div>
-      <h1>Users</h1>
-      {/* Display users */}
-    </div>
-  );
+  const [username, setName] = useState("");
+  const [password, setPassword] = useState("");
+  
+    return (
+        <div>
+            <Header />
+            <h2>Login</h2>
+            <form>
+                <label for="username-field">Username:</label>
+                <input id="username-field" type="text" value={username} onChange={(e) => setName(e.target.value)} />
+                <label for="password-field">Password:</label>
+                <input id="password-field" type="text" value={password} onChange={(e) => setPassword(e.target.value)} />
+                <button>Login</button>
+            </form>    
+            <p>Forgot Password? (Will be a link)</p>
+            <Footer />
+        </div>
+    )
 }
 
 export default Login;
