@@ -15,6 +15,7 @@ function App() {
     <div>
       <BrowserRouter>
         <Routes>
+          {/*How each page connects. The extension for each page*/}
           <Route path="/home" element={<MainPage/>} />
           <Route index element={<MainPage />} />
           <Route path="/newuser" element={<NewUser />} />

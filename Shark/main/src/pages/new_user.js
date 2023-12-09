@@ -13,6 +13,7 @@ function NewUser(){
 
         <form>
             <label>Name:</label>
+            {/*Text input*/}
             <input type = "text" required/>
         </form>
 
@@ -29,6 +30,7 @@ function NewUser(){
         <form>
             <label>Contact type:</label>
             <select>
+                {/*Drop down menu input*/}
                 <option value="email">Email</option>
                 <option value="text">Text</option>
                 <option value="carrierpigeon">Our Carrier Pigeon Miguel</option>
