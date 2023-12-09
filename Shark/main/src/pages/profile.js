@@ -1,7 +1,7 @@
 import React from "react";
 import Header from "../components/header";
 import Footer from "../components/footer";
-
+// ella
 function UserProfile() {
     return(
         <div>
@@ -25,6 +25,7 @@ function UserProfile() {
                         <img src='https://placehold.co/200x200' alt='profilePicture'></img>
                       </section>
                     </section>
+                    {/* button to edit profile (when the data works lol) */}
                     <button id="editProfButton">Edit Profile</button>
                 </div>
             </main>
