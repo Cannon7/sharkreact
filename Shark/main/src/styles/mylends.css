@@ -5,11 +5,13 @@
     width: 100%; 
     grid-template-columns: 33% 33% 33% ;
     justify-items: center;
+    /*This styles the header of the page*/
 }
 .box {
     border: 5px black solid;
     border-radius: 25px;
     background-color: #8ccfc0;
+    /*This is a format for all boxes on the page*/
 }
 .mainbody {
     border: 5px solid black;
@@ -18,6 +20,7 @@
     padding: 1em;
     margin: 0 auto;
     text-align: center;
+    /*This is the base for font and font color*/
 }
 .navbar {
     border: 5px solid black;
@@ -25,4 +28,5 @@
     text-decoration: none;
     padding: 30px;
     font-size: 20px;
+    /*This makes the nav links/hamburger menu in the right spot*/
 }
