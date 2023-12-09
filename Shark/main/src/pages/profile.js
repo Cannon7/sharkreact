@@ -25,7 +25,7 @@ function UserProfile() {
                         <img src='https://placehold.co/200x200' alt='profilePicture'></img>
                       </section>
                     </section>
-                    <button>Edit Profile</button>
+                    <button id="editProfButton">Edit Profile</button>
                 </div>
             </main>
             <Footer/>

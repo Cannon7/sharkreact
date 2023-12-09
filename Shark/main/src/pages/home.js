@@ -15,12 +15,12 @@ function MainPage() {
           <div id='homePageGrid' className='bodyCard'>
             <h1>Welcome Back User!</h1>
             {/* infoBox basically puts a border around whatever the class is defined on*/}
-            <section className='infoBox'>
+            <section id='alertSection' className='infoBox'>
               <h2 >Alerts</h2>
               <p>Ben's loan is due in 3 days</p>
             </section>
             <img src='https://placehold.co/200x200' alt='profilePicture'></img>
-            <h2 className='infoBox'><a href=''>View Current Loans</a></h2>
+            <h2 className='infoBox'><a href='mylends'>View Current Loans</a></h2>
           </div>
         </main>
         <Footer />
